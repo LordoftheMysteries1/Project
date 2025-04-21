@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример сайта на Bootstrap</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column; 
+            flex-grow: 1; /* Чтобы карточки заполняли всю доступную высоту */
+        }
+        .card-body {
+            flex-grow: 1; /* Для того чтобы карточки растягивались по высоте внутри блока */
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">Главная</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+    
+        <div class="row">
+            <div class="col text-center mb-5">
+                <h1> Мой сайт </h1>
+                <h5 class="fs-4">Сайт созданный для примера по созданию сайт для проекта</h5>
+            </div>
+        </div>
+    
+    
+        <div class="row mb-2">
+            <img src="Img/Main Image.jpg" alt="Главное изображение" class="main-image col-md-6 rounded mx-auto d-block">
+        </div>
+        <hr>
+        <h2>Основные блоки</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <!-- <img src="Img/Main image.jpeg" class="card-img-top col-md-4 rounded mx-auto d-block" alt="Карточка 1" style="width: 30%; height: auto;"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Написание html</h5>
+                        <ol>
+                            <li class="card-text">Основная структура</li>
+                            <li class="card-text">Написание тегов</li>
+                            <li class="card-text">Добавление текста</li>
+                        </ol>
+                        <button class="btn btn-primary toggle-info" data-toggle="collapse" data-target="#info4" aria-expanded="false" aria-controls="info4">
+                            Показать информацию
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <!-- <img src="{% static 'images/kard2.png' %}" class="card-img-top col-md-4 rounded mx-auto d-block" alt="Карточка 2" style="width: 30%; height: auto;"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <ol>
+                            <li class="card-text">Изучение классов</li>
+                            <li class="card-text">Добавление классов</li>
+                            <li class="card-text">Адаптивка</li>
+                        </ol>
+                        <button class="btn btn-primary toggle-info" data-toggle="collapse" data-target="#info5" aria-expanded="false" aria-controls="info5">
+                            Показать информацию
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <!-- <img src="{% static 'images/kard3.png' %}" class="card-img-top col-md-4 rounded mx-auto d-block" alt="bootstrap image size" style="width: 30%; height: auto;"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Вывод сайта в интеренет</h5>
+                        <ol>
+                            <li class="card-text">Скачивание Github</li>
+                            <li class="card-text">Создание репозитория</li>
+                            <li class="card-text">Отправить код на репозиторий</li>
+                        </ol>
+                        <button class="btn btn-primary toggle-info" data-toggle="collapse" data-target="#info6" aria-expanded="false" aria-controls="info6">
+                            Показать информацию
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="collapse mt-3" id="info4">
+                <div class="card card-body">
+                    Объектно-ориентированное программирование (ООП) в Python позволяет создавать структуры данных, которые моделируют реальные объекты, используя классы и экземпляры. Алгоритмы, в свою очередь, представляют собой последовательности шагов для решения задач, и их эффективность может быть значительно повышена при использовании принципов ООП, таких как инкапсуляция и наследование.
+                </div>
+            </div>
+    
+            <div class="collapse mt-3" id="info5">
+                <div class="card card-body">
+                    Back-end разработка на Python включает в себя создание серверной логики и взаимодействие с базами данных, что позволяет обрабатывать запросы от клиентов и управлять данными. Использование SQL для работы с базами данных обеспечивает эффективное хранение, извлечение и манипуляцию данными, что является ключевым аспектом в разработке современных веб-приложений.
+                </div>
+            </div>
+    
+            <div class="collapse mt-3" id="info6">
+                <div class="card card-body">
+                    Микроконтроллеры являются основными компонентами многих устройств для Интернета вещей (IoT), так как они обеспечивают управление и обработку данных, необходимые для автоматизации и взаимодействия с окружающей средой. Эти небольшие, экономичные и энергоэффективные устройства могут быть использованы в различных применениях, от умных домашний систем и носимых устройств до промышленного оборудования и систем мониторинга окружающей среды. Современные микроконтроллеры обладают способностью подключаться к интернету, что позволяет им обмениваться данными с другими устройствами и облачными сервисами.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript для изменения текста кнопки и управления видимостью блоков
+        document.querySelectorAll('.toggle-info').forEach(button => {
+            button.addEventListener('click', function () {
+                const target = this.getAttribute('data-target');
+                const isCollapsed = document.querySelector(target).classList.contains('show');
+    
+
+            });
+        });
+    </script>
+</body>
+</html>
