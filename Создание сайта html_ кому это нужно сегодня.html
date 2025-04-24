@@ -75,7 +75,147 @@ var cld_js_object = {"admin_ajax_url":"https:\/\/gb.ru\/blog\/wp-admin\/admin-aj
 <script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
 
 
+<style>
+    .widget-dynamic {
+        font-family: Arial, sans-serif;
+        background-color: #6f64e9;
+        left: 1%;
+        right: auto;
+        border-radius: 5px !important;
+        bottom: 15px;
+        color: #fff;
+        display: none;
+        font-size: 12px;
+        line-height: 16px;
+        position: fixed;
+        /*padding: 10px 10px 15px;*/
+        padding: 22px 20px;
+        text-align: left;
+        text-shadow: none;
+        width: 300px;
+        z-index: 9999999;
+    }
+    .widget-dynamic__link{
+         width: 100%;
+         height: 100%;
+         display: block;
+         position: absolute;
+         left: 0;
+         top: 0;
+     }
+    .widget-dynamic__photo {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
 
+        /*height: 45px;*/
+        /*width: 45px;*/
+        /*border-radius: 50%;*/
+        /*float: left;*/
+        /*overflow: hidden;*/
+        /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);*/
+    }
+    .widget-dynamic__photo img{
+        border-radius: 50%;
+        display: block;
+        /*width: 45px;*/
+        width: 40px;
+        /*height: 45px;*/
+        height: 40px;
+        /*margin: 0;*/
+        margin: 0 10px 0 0;
+    }
+    .widget-dynamic__close{
+        position: absolute;
+         cursor: pointer;
+         font-weight: 700;
+         /*height: 15px;*/
+         height: 12px;
+         /*width: 15px;*/
+         width: 12px;
+         line-height: 12px;
+         margin: -1px -1px 0 0;
+         /*opacity: .5;*/
+         right:18px;
+         top: 19px;
+         text-align: center;
+         transition: opacity .15s ease-in-out;
+     }
+    .widget-dynamic__name{
+         /*font-size: 14px;*/
+         /*font-weight: 700;*/
+         /*line-height: 14px;*/
+         /*margin: 0 30px 5px 55px;*/
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+     }
+
+    .widget-dynamic__message-wrapper {
+        align-items: flex-start;
+        background: #584FC7;
+        border-radius: 0 20px 20px 20px;
+        display: flex;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px auto;
+        padding: 15px 20px;
+    }
+    /*.widget-dynamic__message {*/
+    /*    margin-left: 55px;*/
+    /*}*/
+    .widget-dynamic a{
+        color: #fff;
+    }
+
+    .widget-dynamic__typing {
+         display: none;
+         background: url("https://gb.ru/blog/wp-content/themes/reboot-child/assets/images/lead-catcher/typing.gif") 0 10px no-repeat;
+         margin-left: 50px;
+         padding: 8px 0 3px 20px;
+    }
+    .widget-dynamic__typing.active{
+        display: block;
+    }
+    .widget-dynamic-btn {
+        background: #000000;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        padding: 16px 20px;
+        width: 100%;
+        /*background: transparent;*/
+        /*border: 0;*/
+        /*color: #fff;*/
+        /*cursor: pointer;*/
+        /*margin: 20px 0 0;*/
+        /*padding: 0;*/
+        /*text-align: left;*/
+        /*text-decoration: underline;*/
+    }
+    .widget-dynamic-btn {
+        display: block;
+    }
+    .widget-dynamic-btn:focus {
+        outline: 0;
+    }
+
+    @media screen (max-width:600px) {
+        .widget-dynamic {
+            left: 50%;
+            margin-left: -150px;
+        }
+    }
+</style>
 
 <style>
     .pk,
@@ -370,365 +510,7 @@ var cld_js_object = {"admin_ajax_url":"https:\/\/gb.ru\/blog\/wp-admin\/admin-aj
     }
 </style>
 
-
-
-<div class="blog-detail__breadcrumbs">
-    <span><a href="https://gb.ru/">Главная</a></span><span>▸</span><span>
-            <a href="https://gb.ru/blog/">Блог</a></span><span>▸</span><span>Создание сайта html: кому это нужно сегодня</span>
-</div>
-<div class="blog-wrap">
-
-    <div class="blog-wrap__content">
-        <div class="blog-body">
-            <div class="blog-wrap__img">
-                <img src="./Создание сайта html_ кому это нужно сегодня_files/Создание-сайта-html1.jpg.webp" alt="Создание сайта html" title="Создание сайта html" loading="lazy" data-src-img="https://gb.ru/blog/wp-content/uploads/2022/01/Создание-сайта-html1.jpg" data-src-webp="https://gb.ru/blog/wp-content/uploads/2022/01/Создание-сайта-html1.jpg.webp" data-eio="j" class="ewww_webp_loaded"><noscript><img src="https://gb.ru/blog/wp-content/uploads/2022/01/Создание-сайта-html1.jpg" alt="Создание сайта html" title="Создание сайта html"
-                     loading="lazy"></noscript>
-            </div>
-            <div class="header-wrap">
-                <div class="header-category">
-                    <a href="" class="link link_text">Программирование</a>                 </div>
-                <div class="header-title">
-                    <h1>Создание сайта html: кому это нужно сегодня</h1>
-                </div>
-                <div class="header-property__bottom">
-                    <div class="header-view"><img src="./Создание сайта html_ кому это нужно сегодня_files/view.svg" loading="lazy">
-                                             </div>
-                    <div class="header-time">Время чтения:
-                        16 минут                    </div>
-                </div>
-            </div>
-
-            <div class="blog-author">
-                <div>
-                    <b>Автор статьи:</b>
-                <img alt="" src="./Создание сайта html_ кому это нужно сегодня_files/avatar_user_1_1633701549.png.webp" class="avatar avatar-70 photo ewww_webp_loaded" height="70" width="70" decoding="async" data-src-img="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png" data-src-webp="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp 2x" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png 2x" data-eio="j" srcset="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp 2x"><noscript><img alt='' src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  class="avatar avatar-70 photo ewww_webp" height='70' width='70' decoding='async' data-src-img="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png" data-src-webp="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp 2x" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png 2x" data-eio="j" /><noscript><img alt='' src='https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png' srcset='https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png 2x' class='avatar avatar-70 photo' height='70' width='70' decoding='async'/></noscript>
-                <div>
-                    <b>Устюгов Георгий Сергеевич 10А</b>
-                </div>
-            </a>                </div>
-            </div>
-
-            <div class="blog-content">
-                <div class="topic-list__mob">
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19.5 9L12 16.5L4.5 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                        В статье рассказывается:
-                    </span>
-
-                </div>
-                <div class="topic-list"><b>В статье рассказывается:</b>&nbsp;&nbsp;
-
-<li>
 <style>
-    .checklist-download {
-        align-items: flex-start;
-        cursor: pointer;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-left: 20px;
-    }
-    .checklist-download__icon {
-        height: 44px;
-        margin-right: 10px;
-        width: 34px;
-    }
-    .checklist-download__content {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        font-family: 'IBM Plex Sans', sans-serif;
-        justify-content: flex-start;
-    }
-    .checklist-download__content-title {
-        color: #0968ad;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 5px;
-        text-decoration: underline;
-        animation: text-pulse 2s ease-in-out infinite;
-    }
-    @keyframes text-pulse {
-      from {
-        transform: scale(.99);
-      }
-      50% {
-        transform: scale(1);
-      }
-      to {
-        transform: scale(.99);
-      }
-    }
-    .checklist-download__content-title:hover {
-      color: #6654D9;
-    }
-    .checklist-download__content-desc {
-        font-style: italic;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        color: #636363;
-    }
-    @media screen and (max-width: 768px) {
-        .checklist-download__content {
-            margin-left: 10px;
-        }
-        .checklist-download__content-title {
-            font-size: 16px;
-            line-height: 21px;
-        }
-        .checklist-download__content-desc {
-            font-size: 14px;
-            line-height: 18px;
-        }
-    }
-</style>
-
-
-
-</li>
-</ol>
-<p>Создание сайта html многие воспринимают как отживший своё, никому не нужный анахронизм, ведь есть CMS, различные конструкторы. Блокнот, построчное написание кода, добавление стилей CSS, финальная верстка, публикация – всё это было актуально когда-то. Так ли это?</p>
-<p id="1">И да, и нет. Конечно, сейчас на чистом html создается куда меньше сайтов, чем это делалось в 90-х, 2000-х, но сам код остается актуальным, потому что это и есть код, на котором написан Интернет (если мы говорим про сайты). Да и по-прежнему остаются сферы, где html всё так же востребован. О современных трендах, возможностях трудоустройства со знаниями html вы узнаете из нашего материала.</p>
-</div>
-<h2 id="0">Что собой представляет язык HTML, CSS</h2>
-<p>HyperText Markup Language (HTML) – язык программирования, используемый для написания документов, которыми наполнены веб-сайты. Если вы проведете простые манипуляции по просмотру кода, открыв любой текст в интернете, то вероятно увидите, что абзац начинается с тега &lt;p&gt;…&lt;/p&gt;, а ссылка в тексте – с тега &lt;a&gt;…&lt;/a&gt;. Проще говоря, HTML – код для создания сайта. А когда вы открываете страницы в интернете, то попадаете в мир, написанный этим языком.</p>
-<div class="gray-bg-block border">Почему используется именно HTML-язык? Здесь все просто: если бы не придумали его, то пришлось бы изобретать аналогичный формат, пригодный для обмена документами в интернете. То есть в итоге был бы получен тот же язык, но, возможно, с другим названием.</div>
-<p>Сейчас многие в недоумении воскликнут: «О каком обмене документами идет речь? Я ни с кем ничем не меняюсь!»</p>
-<figure id="attachment_17" aria-describedby="caption-attachment-17" style="width: 800px" class="wp-caption alignnone"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url image" fetchpriority="high" decoding="async" class="alignnone size-full wp-image-2616 ewww_webp_loaded" src="./Создание сайта html_ кому это нужно сегодня_files/1-4.jpg.webp" alt="Что собой представляет язык HTML, CSS" width="800" height="320" sizes="(max-width: 800px) 100vw, 800px" data-src-img="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg" data-src-webp="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-300x120.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-768x307.jpg.webp 768w" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-300x120.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-768x307.jpg 768w" data-eio="j" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-300x120.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-768x307.jpg.webp 768w"><noscript><img itemprop="url image" fetchpriority="high" decoding="async" class="alignnone size-full wp-image-2616" src="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg" alt="Что собой представляет язык HTML, CSS" width="800" height="320" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-300x120.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-768x307.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript><meta itemprop="width" content="800"><meta itemprop="height" content="320"></span><figcaption id="caption-attachment-17" class="wp-caption-text">Что собой представляет язык HTML, CSS</figcaption></figure>
-<p>Здесь вступает в силу терминология. Когда вы заходите в браузер и начинаете переходить по веб-страницам, то думаете, что просто открываете их. Однако с технической точки зрения вы скачиваете страницы.</p>
-<p>Вот что происходит на самом деле:</p>
-<ol class="content-list-number">
-<li>Вы запускаете браузер.</li>
-<li>В адресной строке вводите, например, «yandex.ru» или конкретный поисковый запрос.</li>
-<li>Серверы Яндекса формируют документ – стартовую страницу yandex.ru или же страницу на ваш поисковый запрос. Данный документ переправляется на ваш ПК.</li>
-<li>Открытый вами браузер принимает этот документ, написанный языком HTML, и трансформирует теги в визуальное отображение (текст, картинка и т.п.) при помощи пикселей. То есть это не вы «зашли» в Яндекс, это Яндекс прислал вам результат поиска в виде документа.</li>
-<li>Далее вы, например, нажимаете на ссылку, которая содержится в этом документе. В этот момент браузер вновь отправляет запрос на определенный сервер, а тот в ответ присылает новый документ в формате HTML.</li>
-<li>Принятый документ браузер открывает в новой вкладке.</li>
-<li>Это выглядит так, будто вы перешли на другой сайт, однако, технически, вы загрузили с этого веб-сайта документ, который имеет вид страницы.</li>
-</ol>
-
-
-
-<p>Другими словами, вы не посещаете сайты, а закачиваете документы, сформированные серверами различных организаций. А для написания всех этих документов использовался язык HTML.</p>
-<p id="2">Львиная доля современных сайтов функционирует с помощью связки HTML+ CSS. CSS (Cascading Style Sheets)</a></span> – это каскадные таблицы стилей, которые отвечают за внешний вид HTML-документов. Используя это язык, программисты составляют визуальный облик деталей веб-страницы.</p>
-<h2 id="1">Актуальность создания сайта на языке HTML</h2>
-<p>Потенциал CSS довольно обширен. Размещение элементов относительно друг друга, создание анимации, адаптирование страницы к определенным условиям просмотра – за все это отвечают каскадные таблицы стилей.</p>
-<div class="blue-bg-block border">В случае, когда CSS не применяются при создании страницы, браузер будет воссоздавать HTML-элементы, используя, так называемый дефолтный стиль – стиль по умолчанию. Он отвечает за базовое оформление веб-страницы, а определяют его разработчики соответствующих браузеров.</div>
-<p>Человек, который создает веб-страницы с использованием языков HTML и CSS, называется веб-дизайнером, от английского словосочетания «web design». На русский манер такой специалист называется «верстальщик», а процесс его работы – верстка сайта.</p>
-<p>Но это еще не все специальности, встречающиеся в IT-индустрии и связанные с созданием веб-сайта с помощью HTML и CSS языков. Например, можно встретить:</p>
-<ul>
-<li>дизайнер-верстальщик – специалист занимается и дизайном, и версткой веб-страницы. То есть, он выстраивает ее структуру и визуальную составляющую, а затем, прописывая коды на HTML и CSS, создает конечный продукт;</li>
-<li>фронтенд-разработчик – помимо верстки занимается еще и программированием веб-страницы, создает интерфейс, занимается созданием фронтенд-приложений. Такой специалист должен знать не только CSS и HTML, но и JavaScript;</li>
-<li>веб-разработчик – у этой специальности довольно широкий функционал, так как для веб-разработки требуются знания в фронтенд- и бэкенд-направлениях;</li>
-<li>бэкенд-разработчик – занимается внутренней разработкой ресурса, поэтому должен знать языки Python, PHP, JavaScript, Java и другие.</li>
-<li>фулстэк-разработчик – занимается и фронт- и бэкендом.</li>
-</ul>
-<p>В январе 2020 года креативное агентство We Are Social выяснило, что на тот момент пользователями интернета являлись 4,54 млрд людей, что составляло 59 % от общего числа всех жителей планеты. Соответственно, высока вероятность, что оставшийся 41 % рано или поздно также станет использовать ресурсы сети.</p>
-<p>Из этих предположений вытекают следующие допущения: интернет-индустрия не остановит своего развития, будут появляться все новые сайты, а для их реализации будут необходимы языки программирования. Логично, что HTML и CSS также будут прогрессировать.</p>
-<div class="gray-bg-block border">Во время работы с вопросами верстки в той или иной степени соприкасаются веб-, бэкенд- и фронтед-разработчики. Им не всегда нужно досконально знать практическую сторону этого процесса, но без теоретического понимания принципов обойтись невозможно.</div>
-<p>Пока интернет продолжает развиваться, профессия по созданию веб-сайтов на языке HTML и CSS не потеряет актуальности. Но это не говорит о том, что верстальщики могут не переживать по поводу своей востребованности на рынке труда. Наоборот, им следует задуматься о будущем.</p>
-<p>Дело в том, что к таким специалистам предъявляют меньше требований, чем к программистам. Для трудоустройства «чистым» верстальщикам нужно меньше знаний, поэтому конкуренция среди них очень высока. Чтобы выделиться на фоне других соискателей, нужно обладать дополнительными навыками, а для этого следует повышать свою квалификацию.</p>
-<p>Далее, сама верстка подразумевает монотонную работу с однотипными задачами, для которой необходима усидчивость и неослабевающая концентрация внимания. Не каждый может похвастаться такими способностями, поэтому с течением времени работа просто надоедает, к профессии теряется интерес, и человек выгорает. В итоге мало кто продолжает заниматься нелюбимым делом.</p>
-<figure id="attachment_17" aria-describedby="caption-attachment-17" style="width: 800px" class="wp-caption alignnone"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url image" decoding="async" class="alignnone size-full wp-image-2617 ewww_webp_loaded" src="./Создание сайта html_ кому это нужно сегодня_files/2-3.jpg.webp" alt="Актуальность создания сайта на языке HTML" width="800" height="534" sizes="(max-width: 800px) 100vw, 800px" data-src-img="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg" data-src-webp="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-300x200.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-768x513.jpg.webp 768w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-599x400.jpg.webp 599w" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-300x200.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-768x513.jpg 768w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-599x400.jpg 599w" data-eio="j" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-300x200.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-768x513.jpg.webp 768w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-599x400.jpg.webp 599w"><noscript><img itemprop="url image" decoding="async" class="alignnone size-full wp-image-2617" src="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg" alt="Актуальность создания сайта на языке HTML" width="800" height="534" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-300x200.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-768x513.jpg 768w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-599x400.jpg 599w" sizes="(max-width: 800px) 100vw, 800px" /></noscript><meta itemprop="width" content="800"><meta itemprop="height" content="534"></span><figcaption id="caption-attachment-17" class="wp-caption-text">Актуальность создания сайта на языке HTML</figcaption></figure>
-<p>Последние годы все чаще поднимается тема о возможной замене «чистых» верстальщиков программами-конструкторами, которые позволят без знания HTML создавать сайты на основе макетов в формате psd. Это вряд ли произойдет в ближайшее время, однако нужно учитывать такой вариант развития событий.</p>
-<div class="blue-bg-border-block border">Но не стоит опускать руки и думать, что специальность верстальщика сайта не имеет перспектив. Ее можно использовать как шанс для вхождения в сферу веб-разработки. Подавляющая часть востребованных веб-программистов выросла именно из узкопрофильных специалистов верстки. Знание HTML и CSS помогают «влиться» в веб-индустрию, а затем расти в этом направлении, изучая программирование.</div>
-<p>Итак, подведем итоги:</p>
-<ul>
-<li>веб-разработка немыслима без HTML и CSS;</li>
-<li>понимание и навыки верстки дают возможность найти работу с достойной оплатой;</li>
-<li id="3">верстку можно рассматривать как первый шаг к специальности веб-программиста.</li>
-</ul>
-<h2 id="2">Преимущества и недостатки сайтов на HTML</h2>
-<p>Сайты, созданные с помощью HTML, представляют собой набор из статичных готовых страниц, которые написаны HTML-кодом и хранятся в завершенном виде на каком-либо сервере. Сайт, состоящий из динамичных страниц, использует систему CMS, которая формирует страницу, исходя из запросов пользователя. Другими словами, когда посетитель отправляет запрос, CMS-система собирает нужную информацию из базы данных сайта, и выдает сгенерированную страницу.</p>
-<style>
-    .banner-2__wrap {
-        background: url("https://gb.ru/blog/wp-content/uploads/2023/05/bg-programmer.png") no-repeat center;
-        background-size: cover;
-    }
-
-    @media (max-width: 800px) {
-        .banner-2__wrap {
-            background: url("https://gb.ru/blog/wp-content/uploads/2023/05/bg-programmer-mob.png") no-repeat center;
-            background-size: cover;
-        }
-    }
-</style>
-
-
-<a class="banner-2__download_file" href="https://gb.ru/blog/wp-content/themes/reboot-child/job_search_channels_in_a_crisis.pdf" download="">Скачать
-    файл</a>
-
-
-<p>У обоих видов сайта есть и преимущества, и недостатки. Что именно использовать – HTML или CMS – зависит от задач проекта.</p>
-<p>Рассмотрим основные достоинства сайтов, созданных через HTML, по сравнению с аналогами, в основе которых лежит CMS.</p>
-<ul>
-<li>HTML-сайты меньше «весят»;</li>
-<li>функционирование и загрузка сайта происходят намного быстрее, а ресурсов сервера на это требуется намного меньше;</li>
-<li>отсутствие «мусорного кода», характерного для большинства CMS-систем;</li>
-<li>HTML-сайты не нуждаются в обновлении движка и отдельных модулей, тогда как для CMS эти процессы нужно проводить регулярно и в обязательном порядке;</li>
-<li>операция резервного копирования сайта имеет упрощенную форму – достаточно сделать копию файлов из главной папки (родительской директории). Это относится и к процедуре переноса сайта на другой хостинг;</li>
-<li>процесс верстки макета HTML-сайта прост. А для перевода сайта на CMS-систему, его нужно предварительно сверстать в HTML, то есть в создании CMS-сайта присутствует как минимум один лишний этап;</li>
-<li>с финансовой точки зрения создание HTML-сайта с нуля обходится дешевле, чем разработка CMS-сайта;</li>
-<li>для HTML-сайтов часто используют хостинг с низкой стоимостью аренды;</li>
-<li>в силу того, что информация HTML-страницы хранится в ее файле, контент имеет высокую степень сохранности. В случае CMS информация содержится в базе данных, и ее повреждение может парализовать работу всего сайта;</li>
-<li>сайты со статичными страницами стабильны в своей работе. Если необходимо отредактировать информацию, то это можно сделать постранично. А если где-то закралась ошибка, то она затронет только одну страницу. В CMS-сайтах допущенная ошибка сказывается на работоспособности всего сайта;</li>
-<li>поддержка не требует глубоких знаний – проекты может обслуживать любой человек, понимающий основы HTML-языка. Система CMS, наоборот, требует опытного специалиста, так как в работе существуют разные подходы и очередность действий.</li>
-</ul>
-<p>В качестве недостатков web-сайтов, созданных на языке HTML, следует выделить несколько пунктов, которые могут иметь первостепенную важность в некоторых ситуациях:</p>
-<ul>
-<li>трудоемкость процесса редактирования, если его необходимо провести на всех страницах или на большем их количестве. Подобная информация может носить справочный характер: номера телефонов, адреса, пункты меню, акции и прочее. Так как эти данные необходимо менять вручную на каждой странице, а их на сайте содержится, например, несколько сотен, то процедура займет немало времени;</li>
-<li>у HTML-сайта нет админ-панели, с помощью которой можно было бы управлять им и его наполнением в упрощенной форме;</li>
-<li id="4">для обслуживания, наполнения и поддержки сайта, нужно понимать основы HTM.</li>
-</ul>
-<h2 id="3">Основные теги для создания сайта на HTML</h2>
-<p>Рассмотрим ключевые теги, применяемые в&nbsp;HTML:</p>
-<ul>
-<li><b>&lt;head&gt;…&lt;/head&gt;</b>— содержимое тега не отображается на странице (кроме элемента <b><em>title</em></b>), но в нем хранятся те элементы, которые влияют на взаимодействие страницы и браузера;</li>
-<li><b>&lt;title&gt;…&lt;/title&gt;</b>— расположен внутри <b><em>head</em></b>. Отвечает за заголовок документа. Написанный внутри него текст будет воссоздаваться в названии вкладки и в закладках браузера;</li>
-<li><b>&lt;body&gt;…&lt;/body&gt;</b>— хранит в себе видимую часть страницы: текст, картинки, таблицы и т.д.;</li>
-<li><b>&lt;h1&gt;…&lt;/h1&gt;, &lt;h2&gt;…&lt;/h2&gt;</b> и&nbsp;так далее&nbsp;— теги заголовков различного уровня;</li>
-<li><b>&lt;p&gt;…&lt;/p&gt;</b>— определяет текстовый абзац;</li>
-<li><b>&lt;</b><b>a</b> <b>href</b><b>=»…»&gt;…&lt;/</b><b>a</b><b>&gt;</b>— тег, определяющий ссылку. Атрибут <b><em>href</em></b> задает адрес документа, по которому пользователь может перейти;</li>
-<li><b>&lt;img src=»…»&gt;</b>— тег, отвечающий за изображение. Атрибут <b><em>src</em></b> важен и обязателен, так как содержит путь к картинке, по которому браузер может запросить, скачать и показать объект на экране.</li>
-<li><b>&lt;</b><b>ul</b><b>&gt;&lt;</b><b>li</b><b>&gt;…&lt;/</b><b>li</b><b>&gt;&lt;/</b><b>ul</b><b>&gt;</b>— маркированный список с одним компонентом внутри. Для увеличения числа компонентов нужно добавить <b><em>&lt;li&gt;…&lt;/li&gt;</em></b> в <b><em>&lt;ul&gt;…&lt;/ul&gt;;</em></b></li>
-<li><b>&lt;ol&gt;&lt;li&gt;…&lt;/li&gt;&lt;/ol&gt;</b>— тег для создания нумерованного списка;</li>
-<li><b>&lt;div&gt;…&lt;/div&gt;</b>— блочный элемент, свойства которого можно прописать различными каскадными таблицами, получив в итоге, например, кнопку подтверждения или всплывающее окно;</li>
-<li><b>&lt;span&gt;…&lt;/span&gt;</b>— этот тег позволяет изменить вид части текста. Например, сделать буквы синими;</li>
-<li><b>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;…&lt;/td&gt;&lt;td&gt;…&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</b>— минимальный список тегов для создания таблицы. <b><em>tr</em></b> используется только внутри таблиц и определяет количество строк (table row), <b><em>td</em></b> – создает ячейки в строке (table division). Выстраивание таблицы происходит путем вкладывания одних тегов в другие: ячейки в строки, далее в <b><em>&lt;tbody&gt;,</em></b> а затем в <b><em>&lt;table&gt;.</em></b> Существует еще тег <b><em>&lt;th&gt;,</em></b> который создает в таблице одну ячейку, являющуюся заголовочной. Обычно текст в такой ячейки отображается по центру и жирным шрифтом.</li>
-</ul>
-<figure id="attachment_17" aria-describedby="caption-attachment-17" style="width: 800px" class="wp-caption alignnone"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url image" decoding="async" class="alignnone size-full wp-image-2618 ewww_webp_loaded" src="./Создание сайта html_ кому это нужно сегодня_files/3-4.jpg.webp" alt="Основные теги для создания сайта на HTML" width="800" height="526" sizes="(max-width: 800px) 100vw, 800px" data-src-img="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg" data-src-webp="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-300x197.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-768x505.jpg.webp 768w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-608x400.jpg.webp 608w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-335x220.jpg.webp 335w" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-300x197.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-768x505.jpg 768w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-608x400.jpg 608w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-335x220.jpg 335w" data-eio="j" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-300x197.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-768x505.jpg.webp 768w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-608x400.jpg.webp 608w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-335x220.jpg.webp 335w"><noscript><img itemprop="url image" decoding="async" class="alignnone size-full wp-image-2618" src="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg" alt="Основные теги для создания сайта на HTML" width="800" height="526" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-300x197.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-768x505.jpg 768w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-608x400.jpg 608w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-335x220.jpg 335w" sizes="(max-width: 800px) 100vw, 800px" /></noscript><meta itemprop="width" content="800"><meta itemprop="height" content="526"></span><figcaption id="caption-attachment-17" class="wp-caption-text">Основные теги для создания сайта на HTML</figcaption></figure>
-<p>В настоящее время на просторах интернета можно найти много исчерпывающей информации и пошаговых инструкций по созданию HTML-сайтов. Они позволяют не тратить время на заучивание большого объема данных. Однако, если вы будете заниматься версткой на регулярной основе, то многие шаги запомнятся и будут использоваться на автоматизме.<br>
-<style>
-    .insert-bn {
-        align-items: flex-start;
-        border-radius: 20px;
-        background: #E7EDFB;
-        display: flex;
-        flex-direction: column;
-        font-family: 'IBM Plex Sans', sans-serif;
-        justify-content: flex-start;
-        margin: 40px auto;
-        padding: 44px 40px;
-        position: relative;
-        z-index: 1;
-    }
-    .insert-bn__content {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        max-width: 450px;
-    }
-    .insert-bn__content-title span,
-    .insert-bn__content-title {
-        color: #23242C;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 36px;
-        margin-bottom: 19px;
-        text-align: left;
-    }
-    .insert-bn__content-title span {
-        color: #8D46F6;
-    }
-    .insert-bn__content-desc strong,
-    .insert-bn__content-desc {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 23px;
-        margin-bottom: 44px;
-        text-align: left;
-    }
-    .insert-bn__content-desc strong{
-        font-weight: 500;
-    }
-    .insert-bn__content-btn:visited,
-    .insert-bn__content-btn:focus,
-    .insert-bn__content-btn:hover,
-    .insert-bn__content-btn {
-        background: #8D46F6;
-        border: none;
-        border-radius: 10px;
-        color: #fff;
-        cursor: pointer;
-        outline: none;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 16px;
-        padding: 25px 38px;
-    }
-    .insert-bn .image_bg {
-        border-radius: 20px;
-        background: #E7EDFB;
-        bottom: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-    }
-    @media screen and (max-width: 768px) {
-        .insert-bn {
-            min-height: 525px;
-            padding: 28px 20px;
-        }
-        .insert-bn__content {
-            max-width: unset;
-            width: 100%;
-        }
-        .insert-bn__content-title span,
-        .insert-bn__content-title {
-            font-size: 24px;
-            line-height: normal;
-        }
-        .insert-bn__content-desc strong,
-        .insert-bn__content-desc {
-            font-size: 16px;
-            line-height: 24px;
-            margin-bottom: 30px;
-        }
-        .insert-bn__content-btn:visited,
-        .insert-bn__content-btn:focus,
-        .insert-bn__content-btn:hover,
-        .insert-bn__content-btn {
-            font-size: 20px;
-            line-height: 26px;
-            padding: 20px 0;
-            text-align: center;
-            width: 100%;
-        }
-    }
-</style>
-
-<div id="5">Тем не менее этот язык несложно освоить и начать применять. Пока он актуален, с помощью него можно зарабатывать вполне неплохие деньги. В любом случае резкий отказ от HTML-языка невозможен, а значит в запасе будет время для перестройки навыков.</div>
-<h2 id="4">Этапы подготовки к созданию сайта на HTML</h2>
-<p>В работе необходимо выделить несколько этапов.</p>
-<ul>
-<li>Разработка макета, который позволит визуализировать будущий сайт при помощи растровых графических редакторов или обычных рисунков на бумаге.</li>
-<li>Верстка из макета psd. Макет, созданный в программе Photoshop, верстают, затем адаптируют под мобильные гаджеты, а далее тестируют, добиваясь корректного отображения сайта во всех браузерах.</li>
-<li>Последующая верстка HTML-макета под систему управления сайтом или PHP-язык, делая ресурс динамичным.</li>
-</ul>
-<div class="green-bg-border-block border">Макет рекомендуется делать в таких графических редакторах, как Adobe Photoshop. Создайте в нем новый документ и присвойте ему имя «MySite». Оптимальными настройками отображения будут: по ширине – 1170 px, по высоте – 880 px.</div>
-<p>Активируйте изображение линейками и направляющими, привязывая их к границам создаваемого документа. Для того чтобы создать продуманный и детализированный макет, используйте инструменты «Форма», «Текст», «Раскройка», «Прямая» и прочие.</p>
-<p>Дальнейшая верстка заключается в том, что в текстовом файле index.html. размещают блоки макета. Первой строчкой в документе укажите &lt;!DOCTYPE html&gt; – это поможет браузеру понять, каким образом обрабатывать содержимое. Далее припишите теги, которые будут содержать скрытый и видимый для пользователя материал.</p>
-<div class="gray-bg-block border">Важно помнить, что информацию, указанную между тегами &lt;head&gt;…&lt;/head&gt;, пользователь не увидит.</div>
-<p>Структурирование текста производится с помощью тегов:</p>
-<ul>
-<li>&lt;div&gt;…&lt;/div&gt; – блочный элемент;</li>
-<li>&lt;p&gt;…&lt;/p&gt; – абзац;</li>
-<li>&lt;table&gt;…&lt;/table&gt; – таблица:</li>
-<li>&lt;ul&gt;&lt;li&gt;…&lt;/li&gt;&lt;/ul&gt; – списки.</li>
-</ul>
-<p><style>
     .strategy-of-beginners-new {
         background: url(/blog/wp-content/themes/reboot-child/assets/images/incut-strategy-for-beginners-new-v2/bg-2.jpg) no-repeat;
         padding: 40px 30px 50px 30px;
@@ -1066,6 +848,370 @@ var cld_js_object = {"admin_ajax_url":"https:\/\/gb.ru\/blog\/wp-admin\/admin-aj
     }
 </style>
 
+<style>
+    .insert-bn {
+        align-items: flex-start;
+        border-radius: 20px;
+        background: #E7EDFB;
+        display: flex;
+        flex-direction: column;
+        font-family: 'IBM Plex Sans', sans-serif;
+        justify-content: flex-start;
+        margin: 40px auto;
+        padding: 44px 40px;
+        position: relative;
+        z-index: 1;
+    }
+    .insert-bn__content {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 450px;
+    }
+    .insert-bn__content-title span,
+    .insert-bn__content-title {
+        color: #23242C;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 19px;
+        text-align: left;
+    }
+    .insert-bn__content-title span {
+        color: #8D46F6;
+    }
+    .insert-bn__content-desc strong,
+    .insert-bn__content-desc {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-bottom: 44px;
+        text-align: left;
+    }
+    .insert-bn__content-desc strong{
+        font-weight: 500;
+    }
+    .insert-bn__content-btn:visited,
+    .insert-bn__content-btn:focus,
+    .insert-bn__content-btn:hover,
+    .insert-bn__content-btn {
+        background: #8D46F6;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        padding: 25px 38px;
+    }
+    .insert-bn .image_bg {
+        border-radius: 20px;
+        background: #E7EDFB;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    @media screen and (max-width: 768px) {
+        .insert-bn {
+            min-height: 525px;
+            padding: 28px 20px;
+        }
+        .insert-bn__content {
+            max-width: unset;
+            width: 100%;
+        }
+        .insert-bn__content-title span,
+        .insert-bn__content-title {
+            font-size: 24px;
+            line-height: normal;
+        }
+        .insert-bn__content-desc strong,
+        .insert-bn__content-desc {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+        .insert-bn__content-btn:visited,
+        .insert-bn__content-btn:focus,
+        .insert-bn__content-btn:hover,
+        .insert-bn__content-btn {
+            font-size: 20px;
+            line-height: 26px;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+</style>
+
+<style>
+    .banner-2__wrap {
+        background: url("https://gb.ru/blog/wp-content/uploads/2023/05/bg-programmer.png") no-repeat center;
+        background-size: cover;
+    }
+
+    @media (max-width: 800px) {
+        .banner-2__wrap {
+            background: url("https://gb.ru/blog/wp-content/uploads/2023/05/bg-programmer-mob.png") no-repeat center;
+            background-size: cover;
+        }
+    }
+</style>
+
+<style>
+    .checklist-download {
+        align-items: flex-start;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+    .checklist-download__icon {
+        height: 44px;
+        margin-right: 10px;
+        width: 34px;
+    }
+    .checklist-download__content {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        font-family: 'IBM Plex Sans', sans-serif;
+        justify-content: flex-start;
+    }
+    .checklist-download__content-title {
+        color: #0968ad;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 5px;
+        text-decoration: underline;
+        animation: text-pulse 2s ease-in-out infinite;
+    }
+    @keyframes text-pulse {
+      from {
+        transform: scale(.99);
+      }
+      50% {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(.99);
+      }
+    }
+    .checklist-download__content-title:hover {
+      color: #6654D9;
+    }
+    .checklist-download__content-desc {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #636363;
+    }
+    @media screen and (max-width: 768px) {
+        .checklist-download__content {
+            margin-left: 10px;
+        }
+        .checklist-download__content-title {
+            font-size: 16px;
+            line-height: 21px;
+        }
+        .checklist-download__content-desc {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+</style>
+
+
+<div class="blog-detail__breadcrumbs">
+    <span><a href="https://gb.ru/">Главная</a></span><span>▸</span><span>
+            <a href="https://gb.ru/blog/">Блог</a></span><span>▸</span><span>Создание сайта html: кому это нужно сегодня</span>
+</div>
+<div class="blog-wrap">
+
+    <div class="blog-wrap__content">
+        <div class="blog-body">
+            <div class="blog-wrap__img">
+                <img src="./Создание сайта html_ кому это нужно сегодня_files/Создание-сайта-html1.jpg.webp" alt="Создание сайта html" title="Создание сайта html" loading="lazy" data-src-img="https://gb.ru/blog/wp-content/uploads/2022/01/Создание-сайта-html1.jpg" data-src-webp="https://gb.ru/blog/wp-content/uploads/2022/01/Создание-сайта-html1.jpg.webp" data-eio="j" class="ewww_webp_loaded"><noscript><img src="https://gb.ru/blog/wp-content/uploads/2022/01/Создание-сайта-html1.jpg" alt="Создание сайта html" title="Создание сайта html"
+                     loading="lazy"></noscript>
+            </div>
+            <div class="header-wrap">
+                <div class="header-category">
+                    <a href="" class="link link_text">Программирование</a>                 </div>
+                <div class="header-title">
+                    <h1>Создание сайта html: кому это нужно сегодня</h1>
+                </div>
+                <div class="header-property__bottom">
+                    <div class="header-view"><img src="./Создание сайта html_ кому это нужно сегодня_files/view.svg" loading="lazy">
+                                             </div>
+                    <div class="header-time">Время чтения:
+                        16 минут                    </div>
+                </div>
+            </div>
+
+            <div class="blog-author">
+                <div>
+                    <b>Автор статьи:</b>
+                <img alt="" src="./Создание сайта html_ кому это нужно сегодня_files/avatar_user_1_1633701549.png.webp" class="avatar avatar-70 photo ewww_webp_loaded" height="70" width="70" decoding="async" data-src-img="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png" data-src-webp="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp 2x" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png 2x" data-eio="j" srcset="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp 2x"><noscript><img alt='' src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  class="avatar avatar-70 photo ewww_webp" height='70' width='70' decoding='async' data-src-img="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png" data-src-webp="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png.webp 2x" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png 2x" data-eio="j" /><noscript><img alt='' src='https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png' srcset='https://gb.ru/blog/wp-content/uploads/2021/10/avatar_user_1_1633701549.png 2x' class='avatar avatar-70 photo' height='70' width='70' decoding='async'/></noscript>
+                <div>
+                    <b>Устюгов Георгий Сергеевич 10А</b>
+                </div>
+            </a>                </div>
+            </div>
+
+            <div class="blog-content">
+                <div class="topic-list__mob">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.5 9L12 16.5L4.5 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        В статье рассказывается:
+                    </span>
+
+                </div>
+                <div class="topic-list"><b>В статье рассказывается:</b>&nbsp;&nbsp;
+
+<li>
+
+
+
+
+</li>
+</ol>
+<p>Создание сайта html многие воспринимают как отживший своё, никому не нужный анахронизм, ведь есть CMS, различные конструкторы. Блокнот, построчное написание кода, добавление стилей CSS, финальная верстка, публикация – всё это было актуально когда-то. Так ли это?</p>
+<p id="1">И да, и нет. Конечно, сейчас на чистом html создается куда меньше сайтов, чем это делалось в 90-х, 2000-х, но сам код остается актуальным, потому что это и есть код, на котором написан Интернет (если мы говорим про сайты). Да и по-прежнему остаются сферы, где html всё так же востребован. О современных трендах, возможностях трудоустройства со знаниями html вы узнаете из нашего материала.</p>
+</div>
+<h2 id="0">Что собой представляет язык HTML, CSS</h2>
+<p>HyperText Markup Language (HTML) – язык программирования, используемый для написания документов, которыми наполнены веб-сайты. Если вы проведете простые манипуляции по просмотру кода, открыв любой текст в интернете, то вероятно увидите, что абзац начинается с тега &lt;p&gt;…&lt;/p&gt;, а ссылка в тексте – с тега &lt;a&gt;…&lt;/a&gt;. Проще говоря, HTML – код для создания сайта. А когда вы открываете страницы в интернете, то попадаете в мир, написанный этим языком.</p>
+<div class="gray-bg-block border">Почему используется именно HTML-язык? Здесь все просто: если бы не придумали его, то пришлось бы изобретать аналогичный формат, пригодный для обмена документами в интернете. То есть в итоге был бы получен тот же язык, но, возможно, с другим названием.</div>
+<p>Сейчас многие в недоумении воскликнут: «О каком обмене документами идет речь? Я ни с кем ничем не меняюсь!»</p>
+<figure id="attachment_17" aria-describedby="caption-attachment-17" style="width: 800px" class="wp-caption alignnone"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url image" fetchpriority="high" decoding="async" class="alignnone size-full wp-image-2616 ewww_webp_loaded" src="./Создание сайта html_ кому это нужно сегодня_files/1-4.jpg.webp" alt="Что собой представляет язык HTML, CSS" width="800" height="320" sizes="(max-width: 800px) 100vw, 800px" data-src-img="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg" data-src-webp="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-300x120.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-768x307.jpg.webp 768w" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-300x120.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-768x307.jpg 768w" data-eio="j" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-300x120.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-768x307.jpg.webp 768w"><noscript><img itemprop="url image" fetchpriority="high" decoding="async" class="alignnone size-full wp-image-2616" src="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg" alt="Что собой представляет язык HTML, CSS" width="800" height="320" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/1-4.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-300x120.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/1-4-768x307.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript><meta itemprop="width" content="800"><meta itemprop="height" content="320"></span><figcaption id="caption-attachment-17" class="wp-caption-text">Что собой представляет язык HTML, CSS</figcaption></figure>
+<p>Здесь вступает в силу терминология. Когда вы заходите в браузер и начинаете переходить по веб-страницам, то думаете, что просто открываете их. Однако с технической точки зрения вы скачиваете страницы.</p>
+<p>Вот что происходит на самом деле:</p>
+<ol class="content-list-number">
+<li>Вы запускаете браузер.</li>
+<li>В адресной строке вводите, например, «yandex.ru» или конкретный поисковый запрос.</li>
+<li>Серверы Яндекса формируют документ – стартовую страницу yandex.ru или же страницу на ваш поисковый запрос. Данный документ переправляется на ваш ПК.</li>
+<li>Открытый вами браузер принимает этот документ, написанный языком HTML, и трансформирует теги в визуальное отображение (текст, картинка и т.п.) при помощи пикселей. То есть это не вы «зашли» в Яндекс, это Яндекс прислал вам результат поиска в виде документа.</li>
+<li>Далее вы, например, нажимаете на ссылку, которая содержится в этом документе. В этот момент браузер вновь отправляет запрос на определенный сервер, а тот в ответ присылает новый документ в формате HTML.</li>
+<li>Принятый документ браузер открывает в новой вкладке.</li>
+<li>Это выглядит так, будто вы перешли на другой сайт, однако, технически, вы загрузили с этого веб-сайта документ, который имеет вид страницы.</li>
+</ol>
+
+
+
+<p>Другими словами, вы не посещаете сайты, а закачиваете документы, сформированные серверами различных организаций. А для написания всех этих документов использовался язык HTML.</p>
+<p id="2">Львиная доля современных сайтов функционирует с помощью связки HTML+ CSS. CSS (Cascading Style Sheets)</a></span> – это каскадные таблицы стилей, которые отвечают за внешний вид HTML-документов. Используя это язык, программисты составляют визуальный облик деталей веб-страницы.</p>
+<h2 id="1">Актуальность создания сайта на языке HTML</h2>
+<p>Потенциал CSS довольно обширен. Размещение элементов относительно друг друга, создание анимации, адаптирование страницы к определенным условиям просмотра – за все это отвечают каскадные таблицы стилей.</p>
+<div class="blue-bg-block border">В случае, когда CSS не применяются при создании страницы, браузер будет воссоздавать HTML-элементы, используя, так называемый дефолтный стиль – стиль по умолчанию. Он отвечает за базовое оформление веб-страницы, а определяют его разработчики соответствующих браузеров.</div>
+<p>Человек, который создает веб-страницы с использованием языков HTML и CSS, называется веб-дизайнером, от английского словосочетания «web design». На русский манер такой специалист называется «верстальщик», а процесс его работы – верстка сайта.</p>
+<p>Но это еще не все специальности, встречающиеся в IT-индустрии и связанные с созданием веб-сайта с помощью HTML и CSS языков. Например, можно встретить:</p>
+<ul>
+<li>дизайнер-верстальщик – специалист занимается и дизайном, и версткой веб-страницы. То есть, он выстраивает ее структуру и визуальную составляющую, а затем, прописывая коды на HTML и CSS, создает конечный продукт;</li>
+<li>фронтенд-разработчик – помимо верстки занимается еще и программированием веб-страницы, создает интерфейс, занимается созданием фронтенд-приложений. Такой специалист должен знать не только CSS и HTML, но и JavaScript;</li>
+<li>веб-разработчик – у этой специальности довольно широкий функционал, так как для веб-разработки требуются знания в фронтенд- и бэкенд-направлениях;</li>
+<li>бэкенд-разработчик – занимается внутренней разработкой ресурса, поэтому должен знать языки Python, PHP, JavaScript, Java и другие.</li>
+<li>фулстэк-разработчик – занимается и фронт- и бэкендом.</li>
+</ul>
+<p>В январе 2020 года креативное агентство We Are Social выяснило, что на тот момент пользователями интернета являлись 4,54 млрд людей, что составляло 59 % от общего числа всех жителей планеты. Соответственно, высока вероятность, что оставшийся 41 % рано или поздно также станет использовать ресурсы сети.</p>
+<p>Из этих предположений вытекают следующие допущения: интернет-индустрия не остановит своего развития, будут появляться все новые сайты, а для их реализации будут необходимы языки программирования. Логично, что HTML и CSS также будут прогрессировать.</p>
+<div class="gray-bg-block border">Во время работы с вопросами верстки в той или иной степени соприкасаются веб-, бэкенд- и фронтед-разработчики. Им не всегда нужно досконально знать практическую сторону этого процесса, но без теоретического понимания принципов обойтись невозможно.</div>
+<p>Пока интернет продолжает развиваться, профессия по созданию веб-сайтов на языке HTML и CSS не потеряет актуальности. Но это не говорит о том, что верстальщики могут не переживать по поводу своей востребованности на рынке труда. Наоборот, им следует задуматься о будущем.</p>
+<p>Дело в том, что к таким специалистам предъявляют меньше требований, чем к программистам. Для трудоустройства «чистым» верстальщикам нужно меньше знаний, поэтому конкуренция среди них очень высока. Чтобы выделиться на фоне других соискателей, нужно обладать дополнительными навыками, а для этого следует повышать свою квалификацию.</p>
+<p>Далее, сама верстка подразумевает монотонную работу с однотипными задачами, для которой необходима усидчивость и неослабевающая концентрация внимания. Не каждый может похвастаться такими способностями, поэтому с течением времени работа просто надоедает, к профессии теряется интерес, и человек выгорает. В итоге мало кто продолжает заниматься нелюбимым делом.</p>
+<figure id="attachment_17" aria-describedby="caption-attachment-17" style="width: 800px" class="wp-caption alignnone"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url image" decoding="async" class="alignnone size-full wp-image-2617 ewww_webp_loaded" src="./Создание сайта html_ кому это нужно сегодня_files/2-3.jpg.webp" alt="Актуальность создания сайта на языке HTML" width="800" height="534" sizes="(max-width: 800px) 100vw, 800px" data-src-img="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg" data-src-webp="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-300x200.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-768x513.jpg.webp 768w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-599x400.jpg.webp 599w" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-300x200.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-768x513.jpg 768w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-599x400.jpg 599w" data-eio="j" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-300x200.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-768x513.jpg.webp 768w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-599x400.jpg.webp 599w"><noscript><img itemprop="url image" decoding="async" class="alignnone size-full wp-image-2617" src="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg" alt="Актуальность создания сайта на языке HTML" width="800" height="534" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/2-3.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-300x200.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-768x513.jpg 768w, https://gb.ru/blog/wp-content/uploads/2022/01/2-3-599x400.jpg 599w" sizes="(max-width: 800px) 100vw, 800px" /></noscript><meta itemprop="width" content="800"><meta itemprop="height" content="534"></span><figcaption id="caption-attachment-17" class="wp-caption-text">Актуальность создания сайта на языке HTML</figcaption></figure>
+<p>Последние годы все чаще поднимается тема о возможной замене «чистых» верстальщиков программами-конструкторами, которые позволят без знания HTML создавать сайты на основе макетов в формате psd. Это вряд ли произойдет в ближайшее время, однако нужно учитывать такой вариант развития событий.</p>
+<div class="blue-bg-border-block border">Но не стоит опускать руки и думать, что специальность верстальщика сайта не имеет перспектив. Ее можно использовать как шанс для вхождения в сферу веб-разработки. Подавляющая часть востребованных веб-программистов выросла именно из узкопрофильных специалистов верстки. Знание HTML и CSS помогают «влиться» в веб-индустрию, а затем расти в этом направлении, изучая программирование.</div>
+<p>Итак, подведем итоги:</p>
+<ul>
+<li>веб-разработка немыслима без HTML и CSS;</li>
+<li>понимание и навыки верстки дают возможность найти работу с достойной оплатой;</li>
+<li id="3">верстку можно рассматривать как первый шаг к специальности веб-программиста.</li>
+</ul>
+<h2 id="2">Преимущества и недостатки сайтов на HTML</h2>
+<p>Сайты, созданные с помощью HTML, представляют собой набор из статичных готовых страниц, которые написаны HTML-кодом и хранятся в завершенном виде на каком-либо сервере. Сайт, состоящий из динамичных страниц, использует систему CMS, которая формирует страницу, исходя из запросов пользователя. Другими словами, когда посетитель отправляет запрос, CMS-система собирает нужную информацию из базы данных сайта, и выдает сгенерированную страницу.</p>
+
+
+<a class="banner-2__download_file" href="https://gb.ru/blog/wp-content/themes/reboot-child/job_search_channels_in_a_crisis.pdf" download="">Скачать
+    файл</a>
+
+
+<p>У обоих видов сайта есть и преимущества, и недостатки. Что именно использовать – HTML или CMS – зависит от задач проекта.</p>
+<p>Рассмотрим основные достоинства сайтов, созданных через HTML, по сравнению с аналогами, в основе которых лежит CMS.</p>
+<ul>
+<li>HTML-сайты меньше «весят»;</li>
+<li>функционирование и загрузка сайта происходят намного быстрее, а ресурсов сервера на это требуется намного меньше;</li>
+<li>отсутствие «мусорного кода», характерного для большинства CMS-систем;</li>
+<li>HTML-сайты не нуждаются в обновлении движка и отдельных модулей, тогда как для CMS эти процессы нужно проводить регулярно и в обязательном порядке;</li>
+<li>операция резервного копирования сайта имеет упрощенную форму – достаточно сделать копию файлов из главной папки (родительской директории). Это относится и к процедуре переноса сайта на другой хостинг;</li>
+<li>процесс верстки макета HTML-сайта прост. А для перевода сайта на CMS-систему, его нужно предварительно сверстать в HTML, то есть в создании CMS-сайта присутствует как минимум один лишний этап;</li>
+<li>с финансовой точки зрения создание HTML-сайта с нуля обходится дешевле, чем разработка CMS-сайта;</li>
+<li>для HTML-сайтов часто используют хостинг с низкой стоимостью аренды;</li>
+<li>в силу того, что информация HTML-страницы хранится в ее файле, контент имеет высокую степень сохранности. В случае CMS информация содержится в базе данных, и ее повреждение может парализовать работу всего сайта;</li>
+<li>сайты со статичными страницами стабильны в своей работе. Если необходимо отредактировать информацию, то это можно сделать постранично. А если где-то закралась ошибка, то она затронет только одну страницу. В CMS-сайтах допущенная ошибка сказывается на работоспособности всего сайта;</li>
+<li>поддержка не требует глубоких знаний – проекты может обслуживать любой человек, понимающий основы HTML-языка. Система CMS, наоборот, требует опытного специалиста, так как в работе существуют разные подходы и очередность действий.</li>
+</ul>
+<p>В качестве недостатков web-сайтов, созданных на языке HTML, следует выделить несколько пунктов, которые могут иметь первостепенную важность в некоторых ситуациях:</p>
+<ul>
+<li>трудоемкость процесса редактирования, если его необходимо провести на всех страницах или на большем их количестве. Подобная информация может носить справочный характер: номера телефонов, адреса, пункты меню, акции и прочее. Так как эти данные необходимо менять вручную на каждой странице, а их на сайте содержится, например, несколько сотен, то процедура займет немало времени;</li>
+<li>у HTML-сайта нет админ-панели, с помощью которой можно было бы управлять им и его наполнением в упрощенной форме;</li>
+<li id="4">для обслуживания, наполнения и поддержки сайта, нужно понимать основы HTM.</li>
+</ul>
+<h2 id="3">Основные теги для создания сайта на HTML</h2>
+<p>Рассмотрим ключевые теги, применяемые в&nbsp;HTML:</p>
+<ul>
+<li><b>&lt;head&gt;…&lt;/head&gt;</b>— содержимое тега не отображается на странице (кроме элемента <b><em>title</em></b>), но в нем хранятся те элементы, которые влияют на взаимодействие страницы и браузера;</li>
+<li><b>&lt;title&gt;…&lt;/title&gt;</b>— расположен внутри <b><em>head</em></b>. Отвечает за заголовок документа. Написанный внутри него текст будет воссоздаваться в названии вкладки и в закладках браузера;</li>
+<li><b>&lt;body&gt;…&lt;/body&gt;</b>— хранит в себе видимую часть страницы: текст, картинки, таблицы и т.д.;</li>
+<li><b>&lt;h1&gt;…&lt;/h1&gt;, &lt;h2&gt;…&lt;/h2&gt;</b> и&nbsp;так далее&nbsp;— теги заголовков различного уровня;</li>
+<li><b>&lt;p&gt;…&lt;/p&gt;</b>— определяет текстовый абзац;</li>
+<li><b>&lt;</b><b>a</b> <b>href</b><b>=»…»&gt;…&lt;/</b><b>a</b><b>&gt;</b>— тег, определяющий ссылку. Атрибут <b><em>href</em></b> задает адрес документа, по которому пользователь может перейти;</li>
+<li><b>&lt;img src=»…»&gt;</b>— тег, отвечающий за изображение. Атрибут <b><em>src</em></b> важен и обязателен, так как содержит путь к картинке, по которому браузер может запросить, скачать и показать объект на экране.</li>
+<li><b>&lt;</b><b>ul</b><b>&gt;&lt;</b><b>li</b><b>&gt;…&lt;/</b><b>li</b><b>&gt;&lt;/</b><b>ul</b><b>&gt;</b>— маркированный список с одним компонентом внутри. Для увеличения числа компонентов нужно добавить <b><em>&lt;li&gt;…&lt;/li&gt;</em></b> в <b><em>&lt;ul&gt;…&lt;/ul&gt;;</em></b></li>
+<li><b>&lt;ol&gt;&lt;li&gt;…&lt;/li&gt;&lt;/ol&gt;</b>— тег для создания нумерованного списка;</li>
+<li><b>&lt;div&gt;…&lt;/div&gt;</b>— блочный элемент, свойства которого можно прописать различными каскадными таблицами, получив в итоге, например, кнопку подтверждения или всплывающее окно;</li>
+<li><b>&lt;span&gt;…&lt;/span&gt;</b>— этот тег позволяет изменить вид части текста. Например, сделать буквы синими;</li>
+<li><b>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;…&lt;/td&gt;&lt;td&gt;…&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</b>— минимальный список тегов для создания таблицы. <b><em>tr</em></b> используется только внутри таблиц и определяет количество строк (table row), <b><em>td</em></b> – создает ячейки в строке (table division). Выстраивание таблицы происходит путем вкладывания одних тегов в другие: ячейки в строки, далее в <b><em>&lt;tbody&gt;,</em></b> а затем в <b><em>&lt;table&gt;.</em></b> Существует еще тег <b><em>&lt;th&gt;,</em></b> который создает в таблице одну ячейку, являющуюся заголовочной. Обычно текст в такой ячейки отображается по центру и жирным шрифтом.</li>
+</ul>
+<figure id="attachment_17" aria-describedby="caption-attachment-17" style="width: 800px" class="wp-caption alignnone"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url image" decoding="async" class="alignnone size-full wp-image-2618 ewww_webp_loaded" src="./Создание сайта html_ кому это нужно сегодня_files/3-4.jpg.webp" alt="Основные теги для создания сайта на HTML" width="800" height="526" sizes="(max-width: 800px) 100vw, 800px" data-src-img="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg" data-src-webp="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg.webp" data-srcset-webp="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-300x197.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-768x505.jpg.webp 768w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-608x400.jpg.webp 608w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-335x220.jpg.webp 335w" data-srcset-img="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-300x197.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-768x505.jpg 768w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-608x400.jpg 608w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-335x220.jpg 335w" data-eio="j" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg.webp 800w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-300x197.jpg.webp 300w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-768x505.jpg.webp 768w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-608x400.jpg.webp 608w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-335x220.jpg.webp 335w"><noscript><img itemprop="url image" decoding="async" class="alignnone size-full wp-image-2618" src="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg" alt="Основные теги для создания сайта на HTML" width="800" height="526" srcset="https://gb.ru/blog/wp-content/uploads/2022/01/3-4.jpg 800w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-300x197.jpg 300w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-768x505.jpg 768w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-608x400.jpg 608w, https://gb.ru/blog/wp-content/uploads/2022/01/3-4-335x220.jpg 335w" sizes="(max-width: 800px) 100vw, 800px" /></noscript><meta itemprop="width" content="800"><meta itemprop="height" content="526"></span><figcaption id="caption-attachment-17" class="wp-caption-text">Основные теги для создания сайта на HTML</figcaption></figure>
+<p>В настоящее время на просторах интернета можно найти много исчерпывающей информации и пошаговых инструкций по созданию HTML-сайтов. Они позволяют не тратить время на заучивание большого объема данных. Однако, если вы будете заниматься версткой на регулярной основе, то многие шаги запомнятся и будут использоваться на автоматизме.<br>
+
+
+<div id="5">Тем не менее этот язык несложно освоить и начать применять. Пока он актуален, с помощью него можно зарабатывать вполне неплохие деньги. В любом случае резкий отказ от HTML-языка невозможен, а значит в запасе будет время для перестройки навыков.</div>
+<h2 id="4">Этапы подготовки к созданию сайта на HTML</h2>
+<p>В работе необходимо выделить несколько этапов.</p>
+<ul>
+<li>Разработка макета, который позволит визуализировать будущий сайт при помощи растровых графических редакторов или обычных рисунков на бумаге.</li>
+<li>Верстка из макета psd. Макет, созданный в программе Photoshop, верстают, затем адаптируют под мобильные гаджеты, а далее тестируют, добиваясь корректного отображения сайта во всех браузерах.</li>
+<li>Последующая верстка HTML-макета под систему управления сайтом или PHP-язык, делая ресурс динамичным.</li>
+</ul>
+<div class="green-bg-border-block border">Макет рекомендуется делать в таких графических редакторах, как Adobe Photoshop. Создайте в нем новый документ и присвойте ему имя «MySite». Оптимальными настройками отображения будут: по ширине – 1170 px, по высоте – 880 px.</div>
+<p>Активируйте изображение линейками и направляющими, привязывая их к границам создаваемого документа. Для того чтобы создать продуманный и детализированный макет, используйте инструменты «Форма», «Текст», «Раскройка», «Прямая» и прочие.</p>
+<p>Дальнейшая верстка заключается в том, что в текстовом файле index.html. размещают блоки макета. Первой строчкой в документе укажите &lt;!DOCTYPE html&gt; – это поможет браузеру понять, каким образом обрабатывать содержимое. Далее припишите теги, которые будут содержать скрытый и видимый для пользователя материал.</p>
+<div class="gray-bg-block border">Важно помнить, что информацию, указанную между тегами &lt;head&gt;…&lt;/head&gt;, пользователь не увидит.</div>
+<p>Структурирование текста производится с помощью тегов:</p>
+<ul>
+<li>&lt;div&gt;…&lt;/div&gt; – блочный элемент;</li>
+<li>&lt;p&gt;…&lt;/p&gt; – абзац;</li>
+<li>&lt;table&gt;…&lt;/table&gt; – таблица:</li>
+<li>&lt;ul&gt;&lt;li&gt;…&lt;/li&gt;&lt;/ul&gt; – списки.</li>
+</ul>
+<p>
+
 <br>
 Для всех элементов, которые располагаются на сайте, задайте формат отображения. Это можно сделать с помощью HTML-тегов или CSS-таблицами. Последний вариант более предпочтителен, так как позволяет воспользоваться стилями компонентов во второй и последующий раз.
 <div class="gray-bg-block border">Еще один важный момент – таблицу можно прописать внутри &lt;head&gt;, но, как правило, ее задают в файле style.css, ссылку на который размещают внутри тегов.</div>
@@ -1284,170 +1430,8 @@ var cld_js_object = {"admin_ajax_url":"https:\/\/gb.ru\/blog\/wp-admin\/admin-aj
 
 
 
-<style>
-    .widget-dynamic {
-        font-family: Arial, sans-serif;
-        background-color: #6f64e9;
-        left: 1%;
-        right: auto;
-        border-radius: 5px !important;
-        bottom: 15px;
-        color: #fff;
-        display: none;
-        font-size: 12px;
-        line-height: 16px;
-        position: fixed;
-        /*padding: 10px 10px 15px;*/
-        padding: 22px 20px;
-        text-align: left;
-        text-shadow: none;
-        width: 300px;
-        z-index: 9999999;
-    }
-    .widget-dynamic__link{
-         width: 100%;
-         height: 100%;
-         display: block;
-         position: absolute;
-         left: 0;
-         top: 0;
-     }
-    .widget-dynamic__photo {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
 
-        /*height: 45px;*/
-        /*width: 45px;*/
-        /*border-radius: 50%;*/
-        /*float: left;*/
-        /*overflow: hidden;*/
-        /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);*/
-    }
-    .widget-dynamic__photo img{
-        border-radius: 50%;
-        display: block;
-        /*width: 45px;*/
-        width: 40px;
-        /*height: 45px;*/
-        height: 40px;
-        /*margin: 0;*/
-        margin: 0 10px 0 0;
-    }
-    .widget-dynamic__close{
-        position: absolute;
-         cursor: pointer;
-         font-weight: 700;
-         /*height: 15px;*/
-         height: 12px;
-         /*width: 15px;*/
-         width: 12px;
-         line-height: 12px;
-         margin: -1px -1px 0 0;
-         /*opacity: .5;*/
-         right:18px;
-         top: 19px;
-         text-align: center;
-         transition: opacity .15s ease-in-out;
-     }
-    .widget-dynamic__name{
-         /*font-size: 14px;*/
-         /*font-weight: 700;*/
-         /*line-height: 14px;*/
-         /*margin: 0 30px 5px 55px;*/
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 17px;
-        color: #FFFFFF;
-     }
 
-    .widget-dynamic__message-wrapper {
-        align-items: flex-start;
-        background: #584FC7;
-        border-radius: 0 20px 20px 20px;
-        display: flex;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 17px;
-        color: #FFFFFF;
-        flex-direction: column;
-        justify-content: center;
-        margin: 10px auto;
-        padding: 15px 20px;
-    }
-    /*.widget-dynamic__message {*/
-    /*    margin-left: 55px;*/
-    /*}*/
-    .widget-dynamic a{
-        color: #fff;
-    }
-
-    .widget-dynamic__typing {
-         display: none;
-         background: url("https://gb.ru/blog/wp-content/themes/reboot-child/assets/images/lead-catcher/typing.gif") 0 10px no-repeat;
-         margin-left: 50px;
-         padding: 8px 0 3px 20px;
-    }
-    .widget-dynamic__typing.active{
-        display: block;
-    }
-    .widget-dynamic-btn {
-        background: #000000;
-        border-radius: 10px;
-        color: #FFFFFF;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 18px;
-        text-align: center;
-        padding: 16px 20px;
-        width: 100%;
-        /*background: transparent;*/
-        /*border: 0;*/
-        /*color: #fff;*/
-        /*cursor: pointer;*/
-        /*margin: 20px 0 0;*/
-        /*padding: 0;*/
-        /*text-align: left;*/
-        /*text-decoration: underline;*/
-    }
-    .widget-dynamic-btn {
-        display: block;
-    }
-    .widget-dynamic-btn:focus {
-        outline: 0;
-    }
-
-    @media screen (max-width:600px) {
-        .widget-dynamic {
-            left: 50%;
-            margin-left: -150px;
-        }
-    }
-</style>
-<!-- noindex -->
-    <div class="widget-dynamic pc">
-<!--        <a href="https://sg-strategy.ru/anketa-site?utm_source=zahvatchik&utm_medium=sait&utm_campaign=z1" class="widget-dynamic__link" target="_blank"></a>-->
-<!--        <a href="https://gb.ru/path-to-it/pro_free?from=blog_pro_20220707" class="widget-dynamic__link" target="_blank"></a>-->
-        <a href="javascript:void(0);" class="widget-dynamic__link"></a>
-        <div class="widget-dynamic__photo">
-            <img width="40" height="40" src="./Создание сайта html_ кому это нужно сегодня_files/photo_2.jpg" alt="" loading="lazy">
-            <div class="widget-dynamic__name">Иван Степанин</div>
-        </div>
-                <div class="widget-dynamic__close">
-            <img width="12" height="12" src="./Создание сайта html_ кому это нужно сегодня_files/close_btn.svg" alt="" loading="lazy">
-        </div>
-                <div class="widget-dynamic__message-wrapper">
-            <div class="widget-dynamic__message"></div>
-            <div class="widget-dynamic__message"></div>
-            <div class="widget-dynamic__message"></div>
-            <div class="widget-dynamic__typing">Иван Степанин печатает ...</div>
-        </div>
-
-        <div class="widget-dynamic__message-btn"></div>
-
-    </div>
-<!-- /noindex -->
 
 
 <script>
